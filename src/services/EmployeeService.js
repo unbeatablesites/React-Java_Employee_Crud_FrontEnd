@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const EMPLOYEE_API_BASE_URL = "https://crud-employee-jave.herokuapp.com/api/v1/employees";
+const EMPLOYEE_API_BASE_URL = "crud-employee-jave-be.herokuapp.com/api/v1/employees";
 
 class EmployeeService {
   getEmployees() {
