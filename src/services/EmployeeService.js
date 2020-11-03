@@ -4,6 +4,11 @@ const EMPLOYEE_API_BASE_URL = "https://crud-employee-jave.herokuapp.com/api/v1/e
 
 class EmployeeService {
   getEmployees() {
+    var schedule = require('node-schedule');
+
+      schedule.scheduleJob('* * * * * *', function(fireDate){
+        console.log('This job was supposed to run at ' + fireDate + ', but actually ran at ' + new Date());
+      });
     return axios.get(EMPLOYEE_API_BASE_URL);
   }
 
